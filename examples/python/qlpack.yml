@@ -1,0 +1,4 @@
+name: Hello Python
+version: 0.0.0
+libraryPathDependencies:
+    - codeql-python
