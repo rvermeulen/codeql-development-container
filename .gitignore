@@ -1,2 +1,6 @@
 # CodeQL query cache
 .cache
+
+# Folder container CodeQL databases
+databases/**
+!databases/.gitkeep
