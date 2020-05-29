@@ -4,6 +4,7 @@
 	"dockerFile": "../Dockerfile",
 	"settings": { 
 		"codeQL.cli.executablePath": "/home/codeql/codeql-home/codeql-cli/codeql",
+		"codeQL.runningQueries.autoSave": true,
 		"telemetry.enableTelemetry": false,
 		"telemetry.enableCrashReporter": false,
 	},
