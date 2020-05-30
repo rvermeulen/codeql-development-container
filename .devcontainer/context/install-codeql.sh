@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -e
+
 echo Downloading CodeQL $1...
 /usr/bin/curl -s -L https://github.com/github/codeql-cli-binaries/releases/download/$1/codeql.zip -o /tmp/codeql.zip
 echo Cloning CodeQL repositories...
