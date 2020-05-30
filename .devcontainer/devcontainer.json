@@ -11,5 +11,10 @@
 	"extensions": [
 		"github.vscode-codeql"
 	],
-	"containerUser": "codeql"
+	"containerUser": "codeql",
+	"build": {
+		"args": {
+			"CODEQL_VERSION": "v2.1.4"
+		}
+	}
 }
