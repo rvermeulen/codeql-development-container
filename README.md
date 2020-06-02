@@ -14,9 +14,9 @@ In the first example use case we will use an already available database.
 2. Open the repository in _Visual Studio Code_ - `code code-and-chill` (This assumes you installed the [`code` command](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line))
 3. With the _Remote Container_ extension installed, _Visual Studio Code_ will detect the _dev container configuration_ and ask to `Reopen in Container`.
 
-With the openend project now running in the _dev container_ we are ready to start the CTF.
+With the project now running in the _dev container_ we are ready to start the CTF.
 1. Head over to https://securitylab.github.com/ctf/codeql-and-chill.
-2. In the _Setup instructions_ section you can find the link to the database. Download the dabase and move it into the existing database fodler.
+2. In the _Setup instructions_ section you can find the link to the database. Download the database and move it into the existing database folder.
 3. In _Visual Studio Code_ start a new _Terminal_. You will see a prompt similar to `codeql@98bf68344db6:/workspaces/code-and-chill$ `
 4. Change the directory to `databases` and unzip the database `unzip titus-control-plane-db.zip `
 5. Now activate the database by performing a `right click` on the `titus-control-plane-db` subfolder in the _Visual Code Explorer_ and click on the menu item `CodeQL: Set current database`
