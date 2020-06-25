@@ -9,7 +9,13 @@
 		"telemetry.enableCrashReporter": false
 	},
 	"extensions": [
-		"github.vscode-codeql"
+		"github.vscode-codeql",
+		"golang.go",
+		"vscjava.vscode-java-pack",
+		"ms-vscode.cpptools",
+		"slevesque.vscode-zipexplorer",
+		"ms-python.python",
+		"ms-dotnettools.csharp"
 	],
 	"containerUser": "codeql",
 	"build": {
