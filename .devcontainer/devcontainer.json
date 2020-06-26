@@ -10,12 +10,7 @@
 	},
 	"extensions": [
 		"github.vscode-codeql",
-		"golang.go",
-		"vscjava.vscode-java-pack",
-		"ms-vscode.cpptools",
-		"slevesque.vscode-zipexplorer",
-		"ms-python.python",
-		"ms-dotnettools.csharp"
+		"slevesque.vscode-zipexplorer"
 	],
 	"containerUser": "codeql",
 	"build": {
