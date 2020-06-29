@@ -16,5 +16,11 @@ WORKDIR /home/codeql
 COPY --chown=codeql install-codeql.sh install-codeql.sh
 RUN /bin/bash install-codeql.sh ${CODEQL_VERSION}
 
+COPY --chown=codeql install-go-tools.sh install-go-tools.sh
+RUN /bin/bash install-go-tools.sh
+
+COPY --chown=codeql post-install.sh post-install.sh
+RUN /bin/bash post-install.sh
+
 ENTRYPOINT ["/home/codeql/codeql-home/codeql-cli/codeql"] 
 
