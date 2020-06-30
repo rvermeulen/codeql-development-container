@@ -2,11 +2,12 @@
 	"name": "CodeQL query development environment",
 	"context": "./context",
 	"dockerFile": "./context/Dockerfile",
-	"settings": { 
+	"settings": {
 		"codeQL.cli.executablePath": "/home/codeql/codeql-home/codeql-cli/codeql",
 		"codeQL.runningQueries.autoSave": true,
 		"telemetry.enableTelemetry": false,
-		"telemetry.enableCrashReporter": false
+		"telemetry.enableCrashReporter": false,
+		"editor.formatOnSave": true
 	},
 	"extensions": [
 		"github.vscode-codeql",
