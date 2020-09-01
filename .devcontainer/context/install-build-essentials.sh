@@ -15,7 +15,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -yq install \
     python python-pip python3 python3-pip python3-venv \
     nodejs
 
-curl https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz --output go1.14.4.linux-amd64.tar.gz
-tar -C /usr/local -xzf go1.14.4.linux-amd64.tar.gz
-rm go1.14.4.linux-amd64.tar.gz
+curl https://dl.google.com/go/go$1.linux-amd64.tar.gz --output go$1.linux-amd64.tar.gz
+tar -C /usr/local -xzf go$1.linux-amd64.tar.gz
+rm go$1.linux-amd64.tar.gz
 
