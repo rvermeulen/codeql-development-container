@@ -1,5 +1,6 @@
 FROM debian:stable-slim
-ARG CODEQL_VERSION=v2.1.4
+ARG CODEQL_CLI_VERSION=v2.2.5
+ARG CODEQL_REPO_REF=head
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -14,7 +15,7 @@ USER codeql
 WORKDIR /home/codeql
 
 COPY --chown=codeql install-codeql.sh install-codeql.sh
-RUN /bin/bash install-codeql.sh ${CODEQL_VERSION}
+RUN /bin/bash install-codeql.sh ${CODEQL_CLI_VERSION} ${CODEQL_REPO_REF}
 
 COPY --chown=codeql install-go-tools.sh install-go-tools.sh
 RUN /bin/bash install-go-tools.sh
